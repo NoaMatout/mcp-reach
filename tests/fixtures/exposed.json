@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "plain-server":  {"command": "python3", "args": ["-c", "pass"]},
+    "in-a-container":{"command": "docker", "args": ["run", "--rm", "some/image"]},
+    "via-shell":     {"command": "sh", "args": ["-c", "docker run --rm some/image"]},
+    "remote":        {"url": "https://example.com/mcp"},
+    "broken":        {"note": "neither command nor url"}
+  }
+}

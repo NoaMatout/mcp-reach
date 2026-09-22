@@ -1,0 +1,16 @@
+[project]
+name = "mcp-reach"
+version = "0.1.0"
+description = "Report what an MCP server declared in a config file can actually reach."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+mcp-reach = "mcp_reach.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mcp_reach"]
